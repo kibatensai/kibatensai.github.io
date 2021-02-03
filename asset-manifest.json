@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/kibatensai/kibatensai.github.io/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/kibatensai/kibatensai.github.io/static/js/main.e9eb2bb2.chunk.js",
+    "main.js.map": "/kibatensai/kibatensai.github.io/static/js/main.e9eb2bb2.chunk.js.map",
+    "runtime-main.js": "/kibatensai/kibatensai.github.io/static/js/runtime-main.17b4b25a.js",
+    "runtime-main.js.map": "/kibatensai/kibatensai.github.io/static/js/runtime-main.17b4b25a.js.map",
+    "static/js/2.2df39a4f.chunk.js": "/kibatensai/kibatensai.github.io/static/js/2.2df39a4f.chunk.js",
+    "static/js/2.2df39a4f.chunk.js.map": "/kibatensai/kibatensai.github.io/static/js/2.2df39a4f.chunk.js.map",
+    "static/js/3.6274abdb.chunk.js": "/kibatensai/kibatensai.github.io/static/js/3.6274abdb.chunk.js",
+    "static/js/3.6274abdb.chunk.js.map": "/kibatensai/kibatensai.github.io/static/js/3.6274abdb.chunk.js.map",
+    "index.html": "/kibatensai/kibatensai.github.io/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/kibatensai/kibatensai.github.io/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.2df39a4f.chunk.js.LICENSE.txt": "/kibatensai/kibatensai.github.io/static/js/2.2df39a4f.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/kibatensai/kibatensai.github.io/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.17b4b25a.js",
+    "static/js/2.2df39a4f.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.e9eb2bb2.chunk.js"
+  ]
+}
