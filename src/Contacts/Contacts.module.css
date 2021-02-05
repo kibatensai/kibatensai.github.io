@@ -1,5 +1,5 @@
 .contactsBlock {
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(118, 93, 129);
 }
 
@@ -10,14 +10,20 @@
 }
 
 .title {
+    margin: 10px;
     background-color: rgb(185, 223, 193);
 }
 
-.contacts {
+.contactsForm {
     border: 1px solid;
-    width: 100%;
+    width: 280px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
+}
+
+.clickableBtn {
+    background-color: yellow;
+    padding: 5px 15px;
+    margin: 10px;
 }
