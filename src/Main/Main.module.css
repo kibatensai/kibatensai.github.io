@@ -1,6 +1,8 @@
 .mainBlock {
-    height: 100vh;
-    background-color: rgb(216, 170, 216);
+    min-height: 100vh;
+    background-color: #212529;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -23,5 +25,11 @@
 @media only screen and (max-width: 700px) {
     .container {
         justify-content: space-evenly;
+    }
+}
+
+@media only screen and (max-width: 752px) {
+    .container {
+        justify-content: center;
     }
 }

@@ -1,6 +1,6 @@
 .footerBlock {
-    min-height: 200px;
-    background-color: rgba(80, 247, 80, 0.767);
+    min-height: 100px;
+    background-color: #212529;
 }
 
 .footerContainer {
@@ -11,7 +11,6 @@
 
 .title {
     margin: 10px;
-    background-color: rgb(205, 205, 243);
 }
 
 .footer {
@@ -27,4 +26,10 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+    .links{
+        flex-direction: column;
+    }
 }

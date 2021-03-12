@@ -1,0 +1,69 @@
+@import './../../common/styles/sass/variables.scss';
+@import './../../common/styles/sass/mixins.scss';
+
+.project {
+    width: 500px;
+    background-color: $primaryColor;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    box-sizing: border-box;
+    .iconContainer {
+        height: 300px;
+        background-color: grey;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        &:before {
+            position: absolute;
+            content: '';
+            background-color: black;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0.4;
+        }
+        .clickableBtn {
+            background-color: $bgColor;
+            padding: 10px 25px;
+            position: relative;
+            z-index: 1;
+            &:hover {
+                color: #6b0a66;
+                text-shadow: 1px 1px 3px #000000;
+            }
+        }
+
+    }
+    .projectInfo {
+        padding: 10px 15px;
+        .projectTitle {
+
+            letter-spacing: 1px;
+            margin: 0 0 5px;
+            line-height: 1.2;
+            @include text(17px, $textColor, 1.2)
+        }
+        .description {
+            line-height: 1.2;
+            font-weight: 400;
+            font-size: 13px;
+        }        
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+

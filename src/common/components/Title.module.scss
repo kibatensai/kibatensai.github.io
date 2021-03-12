@@ -1,0 +1,52 @@
+@import './../styles/sass/variables.scss';
+
+
+.title {
+    z-index: 100;
+    margin-bottom: 37px;
+    position: relative;
+    & h2 {
+        font-family: 'Poppins' ,sans-serif;
+        font-size: 46px;
+        color: $textColor;
+        margin: 0;
+        display: inline-block;
+        font-weight: 700;
+        letter-spacing: -.25px;
+        line-height: 100%;
+        text-shadow: 1px 1px 2px rgb(199, 34, 214);
+    }
+    .animatedBar {
+    content: '';
+    display: block;
+    height: 4px;
+    margin-top: 20px;
+    position: relative;
+    width: 100px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    &:after, &:before {
+        background-color: #ce1068;
+        content: '';
+        height: 5px;
+        position: absolute;
+        width: 100%;
+        background: url("https://image.freepik.com/free-photo/foamy-texture-purple-colored-liquid_23-2148346917.jpg");
+        animation: animation 500s linear infinite;
+        border: 1px solid black;
+        @keyframes animation {
+            100%{
+             background-position:0px -3000px;
+           }
+         }
+    }
+
+}
+}
+
+
+
+
+
+
+
