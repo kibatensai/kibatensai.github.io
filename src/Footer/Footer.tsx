@@ -9,10 +9,9 @@ export const Footer = () => {
           <h2 className={style.title}>David Pehshvelashvili</h2>
           <div className={style.footer}>
             <div className={style.links}>
-                <a href="#">LinkedIn</a>
-                <a href="#">Telegram</a>
-                <a href="#">Vk</a>
-                <a href="#">Discord</a>
+                <a href="https://www.linkedin.com/in/d-pehshvelashvili/" target="_blank">LinkedIn</a>
+                <a href="https://t.me/kibatensai" target="_blank">Telegram</a>
+                <a href="https://vk.com/vazelindver" target="_blank">Vk</a>
             </div>
             <div>
                 <p>© 2021 All Rights Reserved</p>

@@ -2,15 +2,17 @@ import React from 'react';
 import style from './Skills.module.css';
 import styleContainer from '../common/styles/Container.module.css'
 import { Skill } from './Skill/Skill';
-import { Title } from '../common/components/Title';
+import { Title } from '../common/components/title/Title';
 import {faSitemap, faServer} from '@fortawesome/free-solid-svg-icons'
 import {faReact, faHtml5, faCss3Alt, faJs, faGithub} from '@fortawesome/free-brands-svg-icons'
+import Fade from 'react-reveal/Fade'
 
 export const Skills = () => {
   return (
     <div className={style.skillsBlock}>
-      <div className={`${styleContainer.container} ${style.skillsContainer}`}>
+      <div id='skills' className={`${styleContainer.container} ${style.skillsContainer}`}>
           <Title title={'Skills'}/>
+          <Fade left>
           <div className={style.skills}>
               <Skill title={'React'} description={'An up-to-date UI building technology with efficient solutions for almost any scenario'} icon={faReact}/>
               <Skill title={'Redux'} description={'A heplful state manager to handle business logic'} icon={faSitemap}/>
@@ -21,6 +23,7 @@ export const Skills = () => {
               <Skill title={'Git'} description={'The speed, data integrity and support for development workflow'} icon={faGithub}/>
 
           </div>
+          </Fade>
       </div>
     </div>
   );

@@ -28,6 +28,11 @@
     align-items: center;
 }
 
+a:hover {
+    color: #9c1596;
+    text-shadow: 1px 1px 3px #201e1e;
+}
+
 @media screen and (max-width: 400px) {
     .links{
         flex-direction: column;
