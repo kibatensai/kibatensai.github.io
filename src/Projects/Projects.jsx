@@ -24,8 +24,9 @@ export const Projects = () => {
       <Title title={'Projects'}/>
           <Fade right>
           <div className={style.projects}>
-              <Project style={socialNetwork} title={'Social Network'} description={'First Project Description First Project Description First Project Description First Project Description '}/>
-              <Project style={todoList} title={'Todo List'} description={'Second Project Description Second Project Description Second Project Description Second Project Description '}/>
+
+              <Project link={`https://kibatensai.github.io/typescript_todolist_2.0`} style={todoList} title={'Todo List'} description={'A todolist with authorization, error handling, data saved on backend, with default todo app features'}/>
+              <Project link={`https://kibatensai.github.io/social_network_typescript_realization`} style={socialNetwork} title={'Social Network'} description={'A simple social network alike app with some features, backend storage of users'}/>
           </div>
           </Fade>
       </div>
