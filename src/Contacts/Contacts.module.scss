@@ -32,6 +32,8 @@
 .clickableBtn:hover {
     color: #6b0a66;
     text-shadow: 1px 1px 3px #000000;
+    box-shadow: 0 0.3em 0.5em -0.25em #ee32ff;
+    transition: 0.3s;
 }
 
 @media only screen and (max-width:800px) {
@@ -149,4 +151,9 @@
   opacity: .4;
   cursor: default !important;
   pointer-events: none;
+}
+
+.input {
+  box-shadow: #212529;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
 }

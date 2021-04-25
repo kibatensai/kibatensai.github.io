@@ -6,7 +6,7 @@
     background-color: $primaryColor;
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 30px;
     box-sizing: border-box;
     .iconContainer {
         height: 300px;
@@ -34,8 +34,10 @@
             position: relative;
             z-index: 1;
             &:hover {
+                box-shadow: 0 0.3em 0.5em -0.25em #ee32ff;
                 color: #6b0a66;
                 text-shadow: 1px 1px 3px #000000;
+                transition: 0.3s;
             }
         }
 
@@ -53,8 +55,8 @@
             line-height: 1.2;
             font-weight: 400;
             font-size: 13px;
-        }        
-        
+        }
+
     }
 }
 

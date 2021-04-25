@@ -5,7 +5,7 @@ import style from './Contacts.module.scss';
 import axios from 'axios'
 
 
-export const Contacts = ({onSnackBarShow}: any) => {
+export const Contacts = ({onSnackBarShow, onPreloaderShow}: any) => {
   const [details, setDetails] = useState({ name: '', email: '', message: ''})
 
   const [dis, onDis] = useState(false)
@@ -25,9 +25,11 @@ const messageOnChangeHandler = (e: ChangeEvent<HTMLTextAreaElement>) => {
 const detailsWrap = async (e: any) => {
     e.preventDefault();
     onDis(true)
+    onPreloaderShow(true)
     await axios.post(`https://gmail-smtp-server.herokuapp.com/sendMessage`, details)
     setDetails({name: '', email: '', message: ''})
     onDis(false)
+    onPreloaderShow(false)
     onSnackBarShow(true)
     setTimeout(() => {
       onSnackBarShow(false)
