@@ -44,10 +44,10 @@ const detailsWrap = async (e: any) => {
                 <div className={style.bottom}></div>
 
                 <form className={style.contactsForm}>
-                    <input type={'text'} placeholder={'Name'} onChange={nameOnChangeHandler}/>
-                    <input type={'text'} placeholder={'E-mail'} onChange={emailOnChangeHandler}/>
+                    <input type={'text'} placeholder={'Name'} value={details.name} onChange={nameOnChangeHandler}/>
+                    <input type={'text'} placeholder={'E-mail'} value={details.email} onChange={emailOnChangeHandler}/>
                     <textarea placeholder={'Your message'}
-                                rows={4} cols={100}  onChange={messageOnChangeHandler}/>
+                                rows={4} cols={100}  value={details.message} onChange={messageOnChangeHandler}/>
                     {/* @ts-ignore */}
                     <a href='#' disabled={dis} className={style.clickableBtn} onClick={detailsWrap}>Send Message</a>
                 </form>
