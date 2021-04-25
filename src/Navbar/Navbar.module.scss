@@ -79,3 +79,28 @@
       background: rgba(0, 0, 0, 0.548);
     }
 }
+
+.githubIcon {
+  bottom: 2px;
+  left: 100px;
+}
+
+.iconContainer {
+  position: absolute;
+  bottom: 10px;
+  left: 100px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  background: rgb(239,0,255);
+  background: radial-gradient(circle, rgba(239,0,255,1) 0%, rgba(217,53,53,0.7539390756302521) 100%);
+  box-shadow: 0 0.5em 0.7em -0.25em #ee32ff;
+}
+
+.iconContainer:hover,
+.iconContainer:focus {
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(167,35,186,1) 100%);
+  border-color: #212529;
+  box-shadow: 0 0.5em 0.7em -0.25em #fa69ff;
+}

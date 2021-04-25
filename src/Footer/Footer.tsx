@@ -11,7 +11,7 @@ export const Footer = () => {
             <div className={style.links}>
                 <a href="https://www.linkedin.com/in/d-pehshvelashvili/" target="_blank">LinkedIn</a>
                 <a href="https://t.me/kibatensai" target="_blank">Telegram</a>
-                <a href="https://vk.com/vazelindver" target="_blank">Vk</a>
+                <a href="https://github.com/kibatensai" target="_blank">Github</a>
             </div>
             <div>
                 <p>© 2021 All Rights Reserved</p>

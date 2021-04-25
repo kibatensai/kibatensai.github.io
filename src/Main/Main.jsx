@@ -4,6 +4,7 @@ import Particles from "react-particles-js";
 import Fade from "react-reveal/Fade";
 import ReactTypingEffect from "react-typing-effect";
 import Tilt from "react-tilt";
+import pdfFile from './../assets/David_Pehshvelashvili.pdf'
 
 const particlesOptions = {
   particles: {
@@ -18,6 +19,7 @@ const particlesOptions = {
 };
 
 export const Main = () => {
+
   return (
     <div id='main' className={style.mainBlock}>
       <Particles className={style.particles} params={particlesOptions} />
@@ -36,7 +38,10 @@ export const Main = () => {
           </div>
           <Tilt className={'Tilt'} options={{ max: 15, speed: 200 }}>
             <div className={style.photo}>
+            <a href={pdfFile} type='application/pdf' target='_blank' rel="noreferrer">
               <div className={style.image}></div>
+              <label className={style.resumeLabel}>Click to check my CV</label>
+            </a>
             </div>
           </Tilt>
         </div>

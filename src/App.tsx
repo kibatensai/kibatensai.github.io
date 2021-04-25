@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import { Contacts } from './Contacts/Contacts';
 import { Footer } from './Footer/Footer';
@@ -6,16 +6,25 @@ import { Header } from './Header/Header';
 import { Main } from './Main/Main';
 import { Projects } from './Projects/Projects';
 import { Skills } from './Skills/Skills';
+import { Snackbar } from './common/components/snackbar/Snackbar'
 
 function App() {
+
+  const [snackbarShow, onSnackBarShow] = useState(false)
+
   return (
     <div className="App">
        <Header />
        <Main />
        <Skills />
        <Projects />
-       <Contacts />
+       <Contacts onSnackBarShow={onSnackBarShow}/>
        <Footer />
+       { snackbarShow
+          &&
+          //@ts-ignore
+          <Snackbar title={'Thanks for reaching out! Your message has been sent successfully'} timer={2950}/>
+        }
     </div>
   );
 }

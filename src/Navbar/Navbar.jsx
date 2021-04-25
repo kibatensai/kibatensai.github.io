@@ -1,9 +1,14 @@
 import React from "react";
 import style from "./Navbar.module.scss";
+import githubicon from './../assets/icons8-github.svg'
 import { Link } from "react-scroll";
 
 export const Navbar = () => {
   return (
+    <div>
+    <div className={style.iconContainer}>
+    <a className={style.githubIcon} href='https://github.com/kibatensai' target='_blank' rel='noreferrer'><img src={githubicon} alt='gh_icon'/></a>
+    </div>
     <div className={style.navbar}>
       <Link
         className={style.nav_link}
@@ -45,6 +50,7 @@ export const Navbar = () => {
         duration={500}>
           Contacts
       </Link>
+    </div>
     </div>
   );
 };
