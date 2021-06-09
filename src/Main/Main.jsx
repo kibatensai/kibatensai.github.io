@@ -19,7 +19,7 @@ const particlesOptions = {
 };
 
 export const Main = () => {
-  //need work
+  //work
   return (
     <div id='main' className={style.mainBlock}>
       <Particles className={style.particles} params={particlesOptions} />
